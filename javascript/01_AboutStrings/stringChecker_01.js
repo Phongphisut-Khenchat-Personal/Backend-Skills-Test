@@ -20,3 +20,9 @@ console.log(isValidMessage("Hello123")); // true
 console.log(isValidMessage("hello")); // false (ไม่มีตัวเลข)
 console.log(isValidMessage("HELLO1")); // false (ไม่มีตัวพิมพ์เล็ก)
 console.log(isValidMessage("Hello!@#")); // false (มีอักขระพิเศษ)
+console.log(isValidMessage("Hello")); // false (ความยาวไม่ถูกต้อง)
+console.log(isValidMessage("Hello12345678901234567890")); // false (ความยาวเกิน)
+console.log(isValidMessage("Hello_123")); // true
+console.log(isValidMessage("Hello-123")); // true
+console.log(isValidMessage("Hello_123-")); // false (มีอักขระพิเศษ)
+console.log(isValidMessage("Hello_123-4")); // false (ความยาวเกิน)
