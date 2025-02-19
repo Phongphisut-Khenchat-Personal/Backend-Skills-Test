@@ -2,11 +2,11 @@ import java.util.Arrays;
 
 public class digitSum_02 {
     public static class DigitAnalysis {
-        public int originalNumber;
-        public int numberOfDigits;
-        public int[] digits;
-        public int sum;
-        public int product;
+        public int originalNumber; // ตัวเลขต้นฉบับ
+        public int numberOfDigits; // จำนวนหลักของตัวเลข
+        public int[] digits; // อาร์เรย์ของตัวเลขแต่ละหลัก
+        public int sum; // ผลรวมของตัวเลขแต่ละหลัก
+        public int product; // ผลคูณของตัวเลขแต่ละหลัก
 
         @Override
         public String toString() {
@@ -32,10 +32,14 @@ public class digitSum_02 {
         analysis.sum = 0;
         analysis.product = 1;
 
+        // วนลูปผ่านแต่ละตัวอักษรในสตริงที่แปลงจากตัวเลข
         for (int i = 0; i < numStr.length(); i++) {
+            // แปลงตัวอักษรเป็นตัวเลข
             int digit = Character.getNumericValue(numStr.charAt(i));
             analysis.digits[i] = digit;
+            // บวกตัวเลขเข้ากับผลรวม
             analysis.sum += digit;
+            // คูณตัวเลขเข้ากับผลคูณ
             analysis.product *= digit;
         }
 
