@@ -6,13 +6,13 @@ function checkString(str) {
     if (!str || str.length === 0) {
         return "ข้อความว่าง";
     }
-    
+  
     // ใช้ Regular Expression ตรวจสอบว่ามีตัวเลขในข้อความหรือไม่
     const hasNumbers = /\d/.test(str);
-    
+
     // ตรวจสอบว่ามีตัวอักษรพิเศษหรือไม่
     const hasSpecialChars = /[!@#$%^&*(),.?":{}|<>]/.test(str);
-    
+
     // ส่งคืนออบเจ็กต์ที่มีข้อมูลการวิเคราะห์
     return {
         length: str.length,                        // ความยาวของข้อความ

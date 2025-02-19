@@ -18,5 +18,7 @@ public class digitSum_01 {
         System.out.println(sumDigits(1234)); // 10 (1+2+3+4)
         System.out.println(sumDigits(9876)); // 30 (9+8+7+6)
         System.out.println(sumDigits(102));  // 3 (1+0+2)
+        System.out.println(sumDigits(0));    // 0
+        System.out.println(sumDigits(15-6874));    // 1
     }
 }
