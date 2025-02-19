@@ -6,7 +6,7 @@
 // ห้ามมีอักขระพิเศษ (ยกเว้น _ และ -)
 
 
-public class stringChecker {
+public class stringChecker_01 {
     public static boolean isValidMessage(String message) {
         if (message.length() < 5 || message.length() > 20) return false;
         if (!message.matches(".*[A-Z].*") || !message.matches(".*[a-z].*") || !message.matches(".*[0-9].*")) return false;

@@ -3,7 +3,7 @@
 // โดยเช่น sumDigits(1234) จะได้ผลลัพธ์เป็น 10 (1+2+3+4)
 
 
-public class digitSum { 
+public class digitSum_01 { 
     public static int sumDigits(int n) {
         int sum = 0;
         while (n > 0) {

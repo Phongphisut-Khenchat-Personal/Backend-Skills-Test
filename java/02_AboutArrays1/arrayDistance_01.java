@@ -3,7 +3,7 @@
 // หากไม่มีค่าใดในอาเรย์เท่ากับ num1 หรือ num2 ให้คืนค่า -1
 // ตัวอย่างเช่น findDistance(new int[]{1, 3, 7, 5, 3, 7, 1}, 3, 7) ควรคืนค่า 1 เพราะตำแหน่งที่ใกล้ที่สุดระหว่าง 3 และ 7 คือ 2 และ 3 ซึ่งตำแหน่งห่างกัน 1 ตำแหน่ง
 
-public class arrayDistance {
+public class arrayDistance_01 {
     public static int findDistance(int[] arr, int num1, int num2) {
         int pos1 = -1, pos2 = -1, minDist = Integer.MAX_VALUE;
 
